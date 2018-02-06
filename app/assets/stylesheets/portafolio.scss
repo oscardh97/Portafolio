@@ -3,3 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.img-perfil {
+	margin: 0 auto;
+	width: 250px;
+	height: 300px;
+	border-radius: 50%;
+}
