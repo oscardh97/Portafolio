@@ -29,6 +29,7 @@ footer {
 	height: 50px;
 	bottom: 0;
 	margin-top: 10px;
+	padding-top: 5px;
 	background-color: #222;
 }
 
@@ -46,4 +47,13 @@ h1 {
 .project img{
 	width: 96%;
 	height: 150px;
+}
+
+.social-section {
+ 	margin: auto;
+    width: 50%;
+}
+
+.social-network {
+	width: 30px;
 }

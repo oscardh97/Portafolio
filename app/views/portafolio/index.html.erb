@@ -9,40 +9,49 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><%= link_to "Acercar de mi", root_path %></li>
-				<li><%= link_to "Proyectos", root_path %></li>
-				<li><%= link_to "Contacto", root_path %></li>
+				<li><a href="#about-me">Acercar de mi</a></li>
+				<li><a href="#projects">Proyectos</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>
 
 <div class="container">
-	<h1 class="text-center">Acerca de mi</h1>
+ 	<h1 class="text-center" id="about-me">Acerca de mi</h1>
 	<img class="img-perfil img-responsive" src="perfil.jpg">
 	<div class="paragraph">Soy un estudiante de Ingenieria en Sistemas Computacionales en UNITEC, actualmente estoy cursando mi cuarto año. Tengo dos años y medios de experiencia en desarrollo Web en la compañia Agile Solutions, donde aprendí y utilicé librerías y frameworks como JQuery, AngularJS, CanvasJS, d3 y manejo de bases de datos utilizando el gestor SAP HANA, también manejo la metodología Agile. Además hice una pasantía en el departamento de calidad de UNITEC durante tres meses. 
 		<br><br>
 		Actualmente trabajo en ICOMS, en el departamento de QA, aplicando testes sobre plataformas Android, iOS, tvOS, Fire TV y Tizen
 		<br><br>
-	Manejo los siguientes lenguajes:
-	<ul>
-		<li>HTML y CSS</li>
-		<li>Java</li>
-		<li>JavaScript, con los frameworks y librerías:
-			<ul>
-				<li>Angular JS</li>
-				<li>JQuery</li>
-				<li>Canvas</li>
-				<li>D3</li>
-				<li>Node</li>
-			</ul>
-		</li>
-		<li>C++</li>
-		<li>SQL</li>
-	</ul>
+		Manejo los siguientes lenguajes:
+		<ul>
+			<li>HTML y CSS</li>
+			<li>Java</li>
+			<li>JavaScript, con los frameworks y librerías:
+				<ul>
+					<li>Angular JS</li>
+					<li>JQuery</li>
+					<li>Canvas</li>
+					<li>D3</li>
+					<li>Node</li>
+				</ul>
+			</li>
+			<li>C++</li>
+			<li>SQL</li>
+		</ul>
 	</div>
-	<%= render "projects" %>
+
+	<div id="projects">
+	<%= render "projects"%>
+		
+	</div>
 </div>
 
 
-<footer></footer>
+<footer>
+	<div class="social-section text-center">
+		<a href="https://twitter.com/ODiaz1997"><img src="twitter.png" class="social-network"></img></a>
+		<a href="https://plus.google.com/u/0/101813238763818227918"><img src="GPlus.png" class="social-network"></img></a>
+		<a href="https://github.com/oscarulox"><img src="git.png" class="social-network"></img></a>
+	</div>
+</footer>
